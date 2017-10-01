@@ -11,9 +11,13 @@ describe('next/at', function () {
   });
 
   it('nx.at --- array', function () {
-
     var arr1 = ['a', 'b', 'c'];
     assert.deepEqual(nx.at(arr1, 0, 2), ['a', 'c'])
+  });
+
+  it('nx.at --- array nagative value', function () {
+    var arr1 = ['a', 'b', 'c'];
+    assert.deepEqual(nx.at(arr1, 0, -1), ['a', 'c'])
   });
 
 });
